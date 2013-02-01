@@ -1,0 +1,26 @@
+NOTE:
+-----
+
+the code used to solve the challenge problems are labelled p1-3.cc corresponding to problem 1, 2, and 3.
+
+type "make" in the directory to build all programs, and "make distclean" to remove the programs.
+
+
+Problems:
+---------
+
+p1.cc: iterate through all substrings and look for palindromes.
+
+type "./p1" to run and the output will be printed.
+
+
+p2.cc: repeatedly calling fib() will generate the Fibonacci sequence and repeatedly calling prime() will generate the sequence of prime numbers until we run out of memory (current set at 1000000 primes). 
+
+The first part of the code finds the prime Fibonacci number, N, greater than the input. The second part of the code finds the sum of all divisors of N + 1.
+
+type "./p2" to run and then enter the lower bound on the prime Fibonacci number.
+
+
+p3.cc: iterates through all subsets while keeping track of the size of the subset and the sum of the elements.
+
+type "./p3" to run and the answer will be printed. 

@@ -1,0 +1,42 @@
+Note:
+-----
+
+the code used to solve the problems are labelled p1-3.cc, b1-2.cc corresponding to problem 1, 2, 3, bonus problem 1, and 2.
+
+invoke make in the directory will build all programs.
+
+
+Problems:
+---------
+
+p1.cc: I've implemented VAX's MTH$RANDOM function here using the identical LCG. 
+
+I had known about LCG's and attempted to derive what the constants used to generate the sequence were; I got the constants that matches the first three outputs but it wasn't the same as VAX's implementation.
+
+In the end, I googled VAX's exact implementation and tested it out. The results matched the expected output.
+
+type "./p1" to run and the solution will be printed.
+
+
+
+p2.cc: a straight-forward implementation for matching balanced brackets using a stack.
+
+type "./p2 < p2.input" to run and the solution will be printed where p2.input is a copy of the input from the website.
+
+
+
+p3.cc: a straight-forward search through all pathes in the maze. The map and magic constants are hard-coded in.
+
+type "./p3" to run and the solution will be printed in the form of "udlr"* where u, d, l, r correspond to north, south, west, and east respectively. And the path will be formed by travelling in the direction indicated by the output from left to right. For ex, an output "udlr" corresponds to the path, go north, go south, go west, and then go east.
+
+
+
+b1:cc use the same LCG implementation as p1. This time, the LCG will keep generating PRNs until the specified pattern is encountered.
+
+type "./b1" to run. The next couple PRNs will be printed to the output, each on its own line.
+
+
+
+b2.cc use the same implementation as p3. The map and magic constants are updated to match the problem. In addition, at each step of the search, it keeps track of how many steps we've taken and inflate the cost for the next step accordingly.
+
+type "./b2" to run.
